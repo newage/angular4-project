@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+### Node+npm Container ######################################
+    node:
+        container_name: angular
+        build:
+            context: ./node-npm
+            args:
+                 - PROJECT_PATH=${PROJECT_PATH}
+                 - PUID=${PUID}
+        volumes:
+            - ../:${PROJECT_PATH}
