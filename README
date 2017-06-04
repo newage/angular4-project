@@ -1,0 +1,6 @@
+## Install with docker
+
+    cd docker
+    make config #copy .env.dev to .env
+    make install #install node and angular
+    make console #conect to container

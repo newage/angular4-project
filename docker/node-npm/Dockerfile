@@ -2,13 +2,13 @@ FROM debian:jessie
 
 ENV NPM_CONFIG_CACHE=/var/www/.npm-cache
 ENV NPM_PATH=/nodejs
-ENV NODE_VERSION=v6.10.0
+ENV NODE_VERSION=v6.10.3
 
 RUN apt-get update -y && apt-get install --no-install-recommends -y -q curl python build-essential git ca-certificates libfontconfig
 RUN mkdir -p ${NPM_PATH} && curl http://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.gz | tar xvzf - -C ${NPM_PATH} --strip-components=1
 
 ENV PATH $PATH:${NPM_PATH}/bin
-RUN npm install -g grunt-cli
+RUN npm install -g @angular/cli
 
 RUN apt-get remove -y ca-certificates libfontconfig \
     && apt-get autoremove -y \

@@ -1,8 +1,7 @@
 version: '2'
 
 services:
-### Node+npm Container ######################################
-    node:
+    angular:
         container_name: angular
         build:
             context: ./node-npm
