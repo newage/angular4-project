@@ -6,5 +6,6 @@
 
 ## Setup new project
 
+    make start
     make console
     ng new angular-app
