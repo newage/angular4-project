@@ -1,6 +1,10 @@
-## Install with docker
+## Install npm and angular with docker
 
     cd docker
     make config #copy .env.dev to .env
-    make install #install node and angular
-    make console #conect to container
+    make install #install node and angularng
+
+## Setup new project
+
+    make console
+    ng new angular-app
