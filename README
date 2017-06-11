@@ -6,6 +6,12 @@
 
 ## Setup new project
 
-    make start
     make console
-    ng new angular-app
+    > ng new angular-app
+    > cd angular-app
+
+## Start server
+
+    make console
+    > cd angular-app
+    > ng serve

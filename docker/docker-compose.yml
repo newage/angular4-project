@@ -10,3 +10,5 @@ services:
                  - PUID=${PUID}
         volumes:
             - ../:${PROJECT_PATH}
+        ports:
+            - "4200:4200"

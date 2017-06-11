@@ -1,10 +1,6 @@
-config:
-	cp .env.dev .env
-install:
-	docker-compose build
-start:
-	docker-compose up
-stop:
-	docker-compose down
-console:
-	docker-compose run --rm angular bash
+config: ## создание конфига для докера
+		cp .env.dev .env
+install: ## Сборка имиджа
+		docker-compose build
+console: ## Подключение к контейнеру
+		docker-compose run --rm -p 4200:4300 angular bash
