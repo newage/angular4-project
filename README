@@ -14,4 +14,8 @@
 
     make console
     > cd angular-app
-    > ng serve
+    > ng serve -H 0.0.0.0
+
+## Run in browser
+
+    172.25.0.1:4200

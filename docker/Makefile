@@ -1,5 +1,5 @@
 config: ## создание конфига для докера
-		cp .env.dev .env
+		cp -u .env.dev .env
 install: ## Сборка имиджа
 		docker-compose build
 console: ## Подключение к контейнеру
