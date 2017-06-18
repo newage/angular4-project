@@ -1,22 +1,3 @@
 ## Install npm and angular with docker
 
-    > cd docker
-    > make config #copy .env.dev to .env
-    > make install #install node and angularng
-
-## Setup new project
-
-    > make console
-    dc> ng new angular-app
-    dc> cd angular-app
-
-## Start server
-
-    dc> cd angular-app
-    dc> ng serve -H 0.0.0.0
-
-## How view in browser
-
-    > docker ps # get container id
-    > docker inspect <container_id> # get container ip
-    <container_ip>:4200
+From this build https://hub.docker.com/r/suchja/angular-cli-docker/
