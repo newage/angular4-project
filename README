@@ -19,3 +19,7 @@ From this build https://hub.docker.com/r/suchja/angular-cli-docker/
 ### Serving your new App
 
     docker-compose up
+
+## Connect to container
+
+    docker exec -it angularapp_foo_1 bash
