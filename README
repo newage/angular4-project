@@ -1,3 +1,21 @@
 ## Install npm and angular with docker
 
 From this build https://hub.docker.com/r/suchja/angular-cli-docker/
+
+### Install node
+
+    docker build -t angular-cli
+
+### Install new angular application
+
+    docker run -it --rm --name create-angular-project -v "$PWD":/home/app angular-cli ng new -sn angular-app
+
+### Building new image for developing
+
+    cp docker/* angular-app/*
+    cd angular-app
+    docker-compose build
+
+### Serving your new App
+
+    docker-compose up
